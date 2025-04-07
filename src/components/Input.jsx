@@ -15,7 +15,7 @@ export const Input = ({
         onChangeHandler(event.target.value, field)
     }
 
-    const handleInputBlur = (event) => {
+    const handleInputBlur = (event) => {    
         onBlurHandler(event.target.value, field)
     }
 
@@ -36,10 +36,10 @@ export const Input = ({
                 />
             ) : (
                 <input 
-                type={type}
-                value={value}
-                onChange={handleValueChange}
-                onBlur={handleInputBlur}
+                    type={type}
+                    value={value}
+                    onChange={handleValueChange}
+                    onBlur={handleInputBlur}
                 />
             )}
             <span className='auth-form-validation-message'>
