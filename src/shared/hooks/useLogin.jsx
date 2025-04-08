@@ -5,7 +5,7 @@ import toast from 'react-hot-toast';
 
 export const useLogin = () => {
 
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState(false)
     const navigate = useNavigate();
 
     const login = async (email, password) => {
@@ -26,6 +26,8 @@ export const useLogin = () => {
         const { userDetails } = response.data
 
         localStorage.setItem('user', JSON.stringify(userDetails));
+
+        toast.success('Successful login')
 
         navigate('/')
 
