@@ -72,7 +72,7 @@ export const PasswordSettings = () => {
 
     return (
         <form className="settings-form">
-            {inputs.map((input) => {
+            {inputs.map((input) => (  
                 <Input
                     key={input.field}
                     field={input.field}
@@ -84,8 +84,8 @@ export const PasswordSettings = () => {
                     validationMessage={input.validationMessage}
                     type={input.type}
                     textarea={input.textarea}
-                />
-            })}
+                />             
+            ))}
             <button onClick={handleFormSubmit} disabled={isSubmitButtonDisabled}>
                 Update Password
             </button>

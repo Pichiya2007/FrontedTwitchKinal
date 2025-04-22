@@ -7,5 +7,4 @@ export const StreamKey = (props) => {
             <span>{streamKey}</span>
         </div>
     )
-
 }
